@@ -79,7 +79,7 @@ public class RestaurantManagementSystem {
         System.out.println("Enter employee position: ");
         String position = scanner.next();
         
-        Employee employee = new Employee(name, id);
+        Employee employee = new Employee(name, id, position);
         employees.add(employee);
         System.out.println("Employee added successfully");
     }
