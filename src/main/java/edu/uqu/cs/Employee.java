@@ -3,12 +3,12 @@ package edu.uqu.cs;
 public class Employee {
     private String name;
     private int id;
-    private String position;
+    private String salary;
     
-    public Employee(String name, int id, String position) {
+    public Employee(String name, int id, String salary) {
         this.name = name;
         this.id = id;
-        this.position = position;
+        this.salary = salary;
     }
     
     public String getName() {
@@ -19,12 +19,12 @@ public class Employee {
         return id;
     }
     
-    public String getPosition() {
-        return position;
+    public String geSalary() {
+        return salary;
     }
     
     @Override
     public String toString() {
-        return "Name: " + name + ", ID: " + id + ", Position: " + position;
+        return "Name: " + name + ", ID: " + id + ", Salary : $ " + salary ;
     }
 }

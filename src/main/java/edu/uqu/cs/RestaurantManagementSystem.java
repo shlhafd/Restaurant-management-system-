@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 import java.util.Scanner;
 
+import javax.sql.rowset.serial.SerialArray;
+
 public class RestaurantManagementSystem {
     private static ArrayList<Customer> customers = new ArrayList<>();
     private static ArrayList<Employee> employees = new ArrayList<>();
@@ -76,10 +78,10 @@ public class RestaurantManagementSystem {
         String name = scanner.next();
         System.out.println("Enter employee ID: ");
         int id = scanner.nextInt();
-        System.out.println("Enter employee position: ");
-        String position = scanner.next();
+        System.out.println("Enter employee salary: ");
+        String salary = scanner.next();
         
-        Employee employee = new Employee(name, id, position);
+        Employee employee = new Employee(name, id, salary);
         employees.add(employee);
         System.out.println("Employee added successfully");
     }
