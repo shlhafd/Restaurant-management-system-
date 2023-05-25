@@ -1,4 +1,7 @@
+package edu.uqu.cs;
+
 import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class RestaurantManagementSystem {
